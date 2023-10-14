@@ -14,7 +14,8 @@
     min-width: min-content;}
 
 #title-container { 
-  height:400px;
+  max-height:max-content;
+  
   min-width: min-content;}
 
 #title-and-buttons {
@@ -67,7 +68,7 @@
 
 @media (max-width: 523px) { 
 
-  #title-container {height:820px;}
+  #title-container {max-height:max-content;}
   #title-and-buttons { width: 100%;}
   #title-text-1{
     height:300px;
@@ -86,17 +87,18 @@
   #phone-pic { 
     width: 100%; 
     margin-top:17%;
-    padding-left: 5%;}
+    padding-left: 5%;
+    height:fit-content;}
   #img-dog{
     width:80%;
-    height: 322px;
+    height:fit-content;
     margin-top: 2%;}
   .button-1-1 { width:80%;} }
   
 @media(min-width:361px) and (max-width:455px) {
 
   #title-container {
-    height:810px;}
+    height:max-content;}
   #title-text-1 {
     width:100%;
     height:320px;
@@ -115,24 +117,25 @@
     padding-left: 9%;}
    #phone-pic { 
     width: 100%; 
-    margin-top:17%;}
+    margin-top:17%;
+    height:fit-content;}
   #img-dog {
     width:85%;
-    height: 325px;
     padding-top:0%;
-    padding-left:4%;}}
+    padding-left:4%;
+    height:max-content;}}
   
 @media(min-width: 274px) and (max-width:360px){
-  #title-container {height:820px;}
+  #title-container {max-height:max-content;}
   #title-text-1 {margin-bottom:10%;}
   #phone-pic{
-    height:320px;
+    height:fit-content;
     margin-top:25%;
     padding-top:2%;}
-  #img-dog {height: 320px;}}
+  #img-dog {height:max-content}}
 
 @media (max-width:273px) {
-  #title-container { height:900px;}
+  #title-container { max-height:max-content;}
   #title-text-1{
     height: 410px;
     margin-bottom:0%;}
@@ -141,7 +144,8 @@
     margin-bottom:10%;}
   #phone-pic{
     margin-top:64%;
-    padding-left:9%;}
+    padding-left:9%;
+    height:fit-content;}
    
 }
 </style>
@@ -150,7 +154,7 @@
 
 <div id="main-container" class="container-fluid">
 
-  <!--Title Section-->
+  <!--=======Title Section=======-->
   <div id="title-container" class="row gradient-background">
     <div id="title-and-buttons" class="col-6">
          <div id="text-box" class="col">
@@ -169,6 +173,10 @@
     <div id="phone-pic" class="col-6">
       <img id="img-dog" src="./images/iphone.png"/></div>
   </div>
+
+  <!--=======Features Section=====-->
+
+
 </div> 
 
 <!--======typed js======-->

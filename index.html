@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,7 +17,9 @@
   height:400px;
   min-width: min-content;}
 
-#title-and-buttons {height: 400px;}
+#title-and-buttons {
+  width:50%;
+  height: 400px;}
 
 #phone-pic {
   height:400px; 
@@ -55,12 +57,19 @@
   padding-left:15%;  }
   
 @media(max-width:926px) {
+  #title-text-1 {
+    height:230px;}
+  #buttons {
+    height:170px;}
+  #line-1{
+      color:green; 
+      white-space: pre-line; }
     #buttons { width:90%;}
     #button-1{ margin-bottom: 10%;} 
     .button-1-1 { width:90%;}} 
 
 @media (max-width: 523px) { 
-  
+
   #title-container {height:815px;}
   #title-and-buttons { width: 100%;}
   #title-text-1{
@@ -72,8 +81,12 @@
     width:100%; 
     font-size: 3rem;
     font-weight: 700;} 
+  #line-1{
+    color:green; 
+    white-space: pre-line; }
   #buttons{
-    width:90%;
+    width:0%;
+    width:100%;
     padding-left: 13%;}
   #phone-pic { 
     width: 100%; 
@@ -97,8 +110,9 @@
      width:100%; 
      font-size: 3rem;
      font-weight: 700;}
+  
   #buttons{
-    width:100%;
+    width:90%;
     padding-top: 0%;
     padding-top: 2%;
     padding-left: 8%;}
@@ -108,8 +122,9 @@
   #img-dog {
     width:85%;
     height: 325px;
-    padding-left:10%;
-    padding-top:0%;}}
+    padding-top:0%;
+    padding-left:10%;}
+    }
   
 @media(max-width: 360px) {
   #title-container {height:809px;}
@@ -117,9 +132,21 @@
   #phone-pic{
     height:320px;
     padding-top:2%;}
-  #img-dog {height: 320px;}
-   }
+  #img-dog {height: 320px;}}
 
+@media (max-width:273px) {
+  #title-container { height:900px;}
+  #title-text-1{
+    height: 410px;
+    margin-bottom:0%;}
+  #bottons { 
+    margin-bottom:0%;
+    margin-bottom:10%;
+
+
+  }
+   
+}
 </style>
 </head>
 <body>
@@ -128,13 +155,14 @@
 
   <!--Title Section-->
   <div id="title-container" class="row gradient-background">
-    <div id="title-and-buttons" class="col-6">
+    <div id="title-and-buttons" class="col-6" style="background-color:red;">
          <div id="text-box" class="col">
-            <div  id="title-text-1" class="row text-body-emphasis">
-              <h3 class="title-text-1-1">Meet new and <span class="multiple-text"></span></h3>
+            <div  id="title-text-1" class="row text-body-emphasis" style="background-color:yellow;">
+              <h3 id="line-1" class="title-text-1-1 ">Meet new and 
+                <span class="multiple-text"></span></h3>
               <h3 class="title-text-1-1 ">dogs nearby !!!</h3>
             </div>
-            <div  id="buttons" class="row-6">
+            <div  id="buttons" class="row-6" style="background-color:purple;">
               <button type="button" class="btn btn-light btn-lg col-5 button-1-1 " id="button-1" style="min-width: max-content;" ><img  src="./images/apple-logo.svg" /><span style="padding-left:10px; font-weight:400;"></span>Download</button>
               <span style="padding-left: 10%; "></span>
               <button type="button" class="btn btn-outline-light btn-lg col-5 button-1-1 " style="min-width:max-content;"><img src="./images/googleplay-logo.svg"/><span style="padding-left:10px;"></span>Download</button>
@@ -146,13 +174,12 @@
   </div>
 </div> 
 
-  <!--======typed js======-->
+<!--======typed js======-->
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
 <!--======custom js=====-->
 <script src="script.js"></script>
 
-<!--=======Bootstrap Link=====-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -54,23 +54,20 @@
   height:200px;
   min-width:240px;
   padding-top:5%;
-  padding-left:15%;  }
+  padding-left:15%;}
+.line-1 {color:#FF0000;}
   
 @media(max-width:926px) {
-  #title-text-1 {
-    height:230px;}
-  #buttons {
-    height:170px;}
-  #line-1{
-      color:green; 
-      white-space: pre-line; }
+  #title-text-1 {height:230px;}
+  #buttons {height:170px;}
+  #line-1{white-space: pre-line; }
     #buttons { width:90%;}
     #button-1{ margin-bottom: 10%;} 
     .button-1-1 { width:90%;}} 
 
 @media (max-width: 523px) { 
 
-  #title-container {height:815px;}
+  #title-container {height:820px;}
   #title-and-buttons { width: 100%;}
   #title-text-1{
     height:300px;
@@ -81,9 +78,7 @@
     width:100%; 
     font-size: 3rem;
     font-weight: 700;} 
-  #line-1{
-    color:green; 
-    white-space: pre-line; }
+  #line-1{white-space: pre-line; }
   #buttons{
     width:0%;
     width:100%;
@@ -91,31 +86,33 @@
   #phone-pic { 
     width: 100%; 
     margin-top:17%;
-    padding-left: 4%;}
+    padding-left: 5%;}
   #img-dog{
     width:80%;
     height: 322px;
     margin-top: 2%;}
-  .button-1-1 { width:90%;} }
+  .button-1-1 { width:80%;} }
   
 @media(min-width:361px) and (max-width:455px) {
 
-  #title-container {height:797px;}
+  #title-container {
+    height:810px;}
   #title-text-1 {
+    width:100%;
+    height:320px;
     padding-top: 10%;
     padding-left:0%;
-    padding-left:3%;
-     }
+    padding-left:3%;}
   .title-text-1-1 { 
      width:100%; 
      font-size: 3rem;
      font-weight: 700;}
-  
+
   #buttons{
-    width:90%;
+    width:100%;
     padding-top: 0%;
     padding-top: 2%;
-    padding-left: 8%;}
+    padding-left: 9%;}
    #phone-pic { 
     width: 100%; 
     margin-top:17%;}
@@ -123,14 +120,14 @@
     width:85%;
     height: 325px;
     padding-top:0%;
-    padding-left:10%;}
-    }
+    padding-left:4%;}}
   
-@media(max-width: 360px) {
-  #title-container {height:809px;}
+@media(min-width: 274px) and (max-width:360px){
+  #title-container {height:825px;}
   #title-text-1 {margin-bottom:10%;}
   #phone-pic{
     height:320px;
+    margin-top:25%;
     padding-top:2%;}
   #img-dog {height: 320px;}}
 
@@ -141,10 +138,10 @@
     margin-bottom:0%;}
   #bottons { 
     margin-bottom:0%;
-    margin-bottom:10%;
-
-
-  }
+    margin-bottom:10%;}
+  #phone-pic{
+    margin-top:64%;
+    padding-left:9%;}
    
 }
 </style>
@@ -155,14 +152,14 @@
 
   <!--Title Section-->
   <div id="title-container" class="row gradient-background">
-    <div id="title-and-buttons" class="col-6" style="background-color:red;">
+    <div id="title-and-buttons" class="col-6">
          <div id="text-box" class="col">
-            <div  id="title-text-1" class="row text-body-emphasis" style="background-color:yellow;">
-              <h3 id="line-1" class="title-text-1-1 ">Meet new and 
-                <span class="multiple-text"></span></h3>
+            <div  id="title-text-1" class="row text-body-emphasis">
+              <h3 id="line-1" class="title-text-1-1 ">Meet new and <span></span> 
+                <span  class="multiple-text line-1"></span></h3>
               <h3 class="title-text-1-1 ">dogs nearby !!!</h3>
             </div>
-            <div  id="buttons" class="row-6" style="background-color:purple;">
+            <div  id="buttons" class="row-6">
               <button type="button" class="btn btn-light btn-lg col-5 button-1-1 " id="button-1" style="min-width: max-content;" ><img  src="./images/apple-logo.svg" /><span style="padding-left:10px; font-weight:400;"></span>Download</button>
               <span style="padding-left: 10%; "></span>
               <button type="button" class="btn btn-outline-light btn-lg col-5 button-1-1 " style="min-width:max-content;"><img src="./images/googleplay-logo.svg"/><span style="padding-left:10px;"></span>Download</button>
@@ -183,3 +180,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
+

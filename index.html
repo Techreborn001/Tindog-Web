@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,7 +19,7 @@
 
 #title-and-buttons {
   width:50%;
-  height: 400px;}
+  height:auto;}
 .alt-text{font-size:2.5rem;}
 #phone-pic {
   height:400px; 
@@ -71,14 +71,15 @@
   #title-container {max-height:max-content;}
   #title-and-buttons { width: 100%;}
   #title-text-1{
-    height:200px;
+    height:auto;
     padding-left: 0%;
     padding-left: 13%;
     padding-top: 10%; }
   .title-text-1-1 { 
     width:100%; 
     font-size: 3rem;
-    font-weight: 700;} 
+    font-weight: 700;
+    margin-bottom:6%;} 
   #line-1{white-space: pre-line; }
 
   #buttons{
@@ -87,7 +88,7 @@
     padding-left: 13%;}
   #phone-pic { 
     width: 100%; 
-    margin-top:17%;
+    margin-top:auto;
     height:fit-content;
     padding-left: 5%;}
   #img-dog{
@@ -96,15 +97,14 @@
     margin-top: 2%;}
   .button-1-1 { width:80%;} }
   
-@media(min-width:361px) and (max-width:455px) {
+@media(min-width:367px) and (max-width:455px) {
 
   #title-container {
     height:max-content;}
   #title-text-1 {
     width:100%;
-    height:320px;
+    height:fit-content;
     padding-top: 10%;
-    padding-left:0%;
     padding-left:5%;}
   .title-text-1-1 { 
      width:100%; 
@@ -112,26 +112,20 @@
      font-weight: 700;}
   #buttons{
     width:100%;
-    padding-top: 0%;
-    padding-top: 2%;
     padding-left: 9%;}
    #phone-pic { 
     width: 100%; 
-    margin-top:17%;
     height:fit-content;}
   #img-dog {
     width:85%;
     padding-top:0%;
     padding-left:5%;
-    height:max-content;}}
+    height:fit-content;}}
   
-@media(min-width: 274px) and (max-width:360px){
+@media(min-width: 274px) and (max-width:366px){
   #title-container {max-height:max-content;}
-  #title-text-1 {margin-bottom:10%;}
-  #phone-pic{
-    height:fit-content;
-    margin-top:25%;
-    padding-top:2%;}
+  #title-text-1 {padding-left:5%;}
+  #phone-pic{height:fit-content; }
   #img-dog {height:max-content}}
 
 @media (max-width:273px) {
@@ -178,7 +172,7 @@
     <div id="title-and-buttons" class="col-6">
          <div id="text-box" class="col">
             <div  id="title-text-1" class="row text-body-emphasis">
-              <h3 id="line-1" class="title-text-1-1 ">Meet new and <span></span> 
+              <h3 id="line-1" class="title-text-1-1 ">Meet new and  
                 <span  class="multiple-text line-1"></span></h3>
               <h3 class="title-text-1-1 ">dogs nearby !!!</h3>
             </div>
@@ -192,7 +186,7 @@
   <div id="phone-pic" class="col-6">
      
       <video id="img-dog" autoplay muted loop>
-        <source  src="./Tindog slideshow_V2.mp4"/>
+        <source  src="/Tindog slideshow_V2.mp4"/>
       </video>
     </div>
   </div>
@@ -389,4 +383,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
-
